@@ -11,7 +11,10 @@
 *.jks
 *.keystore
 *.ppk
-*token*
+*.token
+token.json
+*_token.txt
+*.token.txt
 *secret*
 id_rsa
 id_dsa

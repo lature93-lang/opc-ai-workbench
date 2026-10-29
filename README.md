@@ -4,9 +4,9 @@
 
 17 可以从两个入口找到总助：已经接通的微信（ClawBot/iLink 桥），或 Grok Bot 主窗口。日程目前记在 Notion「项目总台账」。「项目事项」是目标结构。提醒写到滴答清单「17项目日程」。
 
-## 仓库是唯一源
+## 仓库是唯一来源
 
-改工作流时先改本仓库，提 PR，合并之后再把 `SKILL.md` 同步到 Grok Bot 里名为 `opc-ai-workbench` 的 skill。两边不一致时，以本仓库为准覆盖 Bot。同步步骤见 [SKILL.md](SKILL.md)。
+仓库与 skill 怎么同步，只写在 [SKILL.md](SKILL.md) 开头。合并后由总助把 skill 存进 Grok Bot。
 
 ## 17 怎么开口
 
@@ -18,13 +18,14 @@
 
 | 路径 | 内容 |
 | --- | --- |
-| [SKILL.md](SKILL.md) | 总助技能正文，十章 |
+| [SKILL.md](SKILL.md) | 总助 skill 正文，十章 |
 | [CHANGELOG.md](CHANGELOG.md) | 版本记录 |
 | [docs/roles.md](docs/roles.md) | 角色职责与交接 |
 | [docs/pipeline.md](docs/pipeline.md) | 需求到上线，含流程图 |
 | [docs/schedule.md](docs/schedule.md) | 项目总台账、项目事项目标结构、滴答提醒 |
 | [docs/connectors.md](docs/connectors.md) | Notion、滴答、GitHub、云端开发 agent、Codex、微信桥 |
 | [docs/rules.md](docs/rules.md) | 密钥、对外发送、验收标准 |
+| [docs/plan.md](docs/plan.md) | 方案定稿与完成对照 |
 | [templates/requirement.md](templates/requirement.md) | 需求说明 |
 | [templates/solution.md](templates/solution.md) | 方案 |
 | [templates/task.md](templates/task.md) | 任务 |

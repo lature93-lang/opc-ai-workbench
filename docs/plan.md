@@ -79,20 +79,22 @@
 ## 后续更正（2026-10-29）
 1. 工具分工以 2026-10-29 17 批准的「成本优先」规则为准：能用本地 Codex 做的优先在本地做；只有要动仓库、电脑离线或任务太大时，才用云端 agent。本条取代上文「四、风险和取舍」第 5 条。
 2. 本地命令的批准方式（一条一批还是整批批准）待 17 确认，上文「一、功能清单」第 4 条中的「每条命令都要 17 批准」暂不作数。
+3. 角色新增：17 于 2026-10-29 亲自让 HR 新增「逆向工程师」（拆解别人的作品，反推需求，由总助转来作品），仓库按六个角色写。
+4. T8 调整：本 PR 合并后，由总助把 SKILL.md 存成 Grok Bot skill「opc-ai-workbench」，仍以仓库为唯一来源。
 SKILL.md 和各份 docs 均以更正后的规则为准。
 
 ## T1–T9 完成对照表
 
-上文本方案定稿一字未改，含文末「后续更正」。下表只记录对照。工具分工和批准方式以更正后的规则为准：成本优先；本地命令的批准方式待 17 确认。
+上文是方案定稿全文，一字未改，含文末「后续更正」。下表只记录对照。现行规则以更正为准：成本优先；批准方式待 17 确认；六个角色含逆向工程师；T8 在合并后由总助存 skill。
 
 | 任务 | 验收标准摘要 | 对应文件 | 状态 |
 | --- | --- | --- | --- |
-| T1 建仓库和基础结构 | 私有仓库；目录与第二节一致；.gitignore 覆盖 .env、*.key 和文件名含 token 的文件；仓库中无密钥 | README.md、SKILL.md、CHANGELOG.md、.gitignore、templates/、docs/、examples/xiju-liaoyu/ | 已完成 |
+| T1 建仓库和基础结构 | 私有仓库；目录与第二节一致；.gitignore 覆盖 .env、*.key 和收窄后的 token 文件名；仓库中无密钥 | README.md、SKILL.md、CHANGELOG.md、.gitignore、.env.example、templates/、docs/、examples/xiju-liaoyu/ | 已完成 |
 | T2 写 SKILL.md | 十章齐全；四个确认点写明材料、确认方式与回退；步骤可执行 | SKILL.md | 已完成 |
-| T3 写 8 个模板 | 8 个文件齐全；字段与方案一致；各有填写说明和短示例 | templates/ 下 requirement.md、solution.md、task.md、mvp-demo.md、acceptance.md、project-profile.md、decision.md、handoff.md | 已完成 |
-| T4 写连接文档 | 六个连接都写前提、步骤、权限、验证和重连；密钥只写经加密输入框提供、存为环境变量；DeepSeek Harness 只留已弃用 | docs/connectors.md | 已完成 |
-| T5 写日程文档 | 字段表和三个视图齐全；写明 Notion 为主数据、滴答单向提醒；写清去重和冲突 | docs/schedule.md | 已完成。字段表和三视图已标为目标结构，并写了补齐步骤 |
-| T6 写角色、流程和规则 | 与 SKILL.md 不矛盾；流程含 mermaid。现行规则为成本优先，批准方式待 17 确认 | docs/roles.md、docs/pipeline.md、docs/rules.md | 已完成 |
-| T7 写戏剧疗愈样例 | 需求到验收的全链路；已脱敏，无个人信息和密钥 | examples/xiju-liaoyu/ | 已完成 |
-| T8 存成 Grok Bot skill | 内容与仓库一致；写明仓库是唯一来源，先改仓库再同步 | SKILL.md | 待合并后同步 |
-| T9 自查并提 PR | PR 描述含密钥扫描、链接检查和章节清单；质检通过后再合并 | 本 PR | 进行中，待质检复验 |
+| T3 写 8 个模板 | 8 个文件齐全；字段与方案一致；方案的任务拆分含目标、输入、验收标准、优先级；各有填写说明和短示例 | templates/ 下 requirement.md、solution.md、task.md、mvp-demo.md、acceptance.md、project-profile.md、decision.md、handoff.md | 已完成 |
+| T4 写连接文档 | 六个连接都写前提、步骤、权限、验证和重连；密钥写经加密输入框提供，存为环境变量；DeepSeek Harness 只留已弃用；上线前先补齐 Notion 库字段 | docs/connectors.md | 已完成 |
+| T5 写日程文档 | 字段表和三个视图标为目标结构并写补齐步骤；写明补齐后 Notion 为主数据、滴答单向提醒；写清去重和冲突 | docs/schedule.md | 已完成 |
+| T6 写角色、流程和规则 | 六个角色；流程含 mermaid，并有 MVP 触及需求的回退线；规则与 SKILL 不矛盾 | docs/roles.md、docs/pipeline.md、docs/rules.md | 已完成 |
+| T7 写戏剧疗愈样例 | 需求到验收的全链路；题材参考，功能是虚构的；已脱敏 | examples/xiju-liaoyu/ | 已完成 |
+| T8 存成 Grok Bot skill | 内容与仓库一致；仓库是唯一来源；合并后再由总助存 skill | SKILL.md | 合并后由总助存 skill |
+| T9 自查并提 PR | PR 描述含密钥扫描、链接检查和章节清单；质检通过后再合并 | 本 PR | 待质检复验 |
