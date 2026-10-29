@@ -12,9 +12,13 @@
 *.ppk
 *.token
 token.json
+token.txt
 *_token.txt
 *.token.txt
 *.secret
+client_secret*.json
+.npmrc
+.netrc
 id_rsa
 id_dsa
 id_ed25519
