@@ -1,0 +1,27 @@
+# 环境变量与本地覆盖
+.env
+.env.*
+!.env.example
+
+# 密钥、证书与登录材料
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ppk
+*token*
+*secret*
+id_rsa
+id_dsa
+id_ed25519
+id_ecdsa
+credentials.json
+credentials/
+secrets/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
