@@ -10,9 +10,11 @@
 
 ## 17 怎么开口
 
-直接对总助说要做的事，例如新需求、改方案、排期、拍板、演示、验收，或请总助拆解别人的公开作品。总助会按 [docs/pipeline.md](docs/pipeline.md) 推进，并在四个确认点停下来等 17。
+先明确说「使用AI班组技能实现 xx 需求」，或按名称调用 `opc-ai-workbench`，再对总助说要做的事，例如新需求、改方案、排期、拍板、演示、验收，或请总助拆解别人的公开作品。总助会按 [docs/pipeline.md](docs/pipeline.md) 推进，并在四个确认点停下来等 17。
 
 四个确认点是：需求定义、方案设计、MVP 演示、最终验收。确认用语和回退方式见 [SKILL.md](SKILL.md) 与 [docs/rules.md](docs/rules.md)。
+
+DSH 派 Grok 工作时，同时指定「流水线」`grok-delivery-review` 和「AI班组」`opc-ai-workbench`。按 [DSH 联合模式](SKILL.md#dsh-联合模式) 读取两份技能并回执版本，由 DSH 统一调 Codex，Grok 向 DSH 交回方案与质检结果。普通需求和仅提及口令不自动启用。Codex 的显式调用策略见 `agents/openai.yaml`；其他宿主按技能正文执行。
 
 ## 目录
 
@@ -40,4 +42,4 @@
 
 ## 版本
 
-当前版本 0.1.1，见 [CHANGELOG.md](CHANGELOG.md)。
+当前版本 0.1.2，见 [CHANGELOG.md](CHANGELOG.md)。

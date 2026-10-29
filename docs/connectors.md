@@ -4,7 +4,7 @@
 
 微信桥与滴答清单的 OAuth 已接通。日常先做验证。验证失败再按各节的「失效重连」处理。
 
-DeepSeek Harness 已弃用，本工作台不再接入。
+独立 AI班组模式不接入 DeepSeek Harness；DSH 明确派单联合使用两份技能时，按 [SKILL.md 的 DSH 联合模式](../SKILL.md#dsh-联合模式) 执行。本页不提供桥接安装步骤。
 
 官方滴答接口以 Dida365 Open API 为准，文档入口为 <https://developer.dida365.com/docs#/openapi>。
 
