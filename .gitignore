@@ -1,6 +1,5 @@
 # 环境变量与本地覆盖
-.env
-.env.*
+.env*
 !.env.example
 
 # 密钥、证书与登录材料
@@ -15,7 +14,7 @@
 token.json
 *_token.txt
 *.token.txt
-*secret*
+*.secret
 id_rsa
 id_dsa
 id_ed25519
