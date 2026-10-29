@@ -12,7 +12,7 @@
 
 ## 仓库
 
-<https://github.com/lature93-lang/xiju-liaoyu>
+原项目仓库，不公开。
 
 写作时该地址无法读取。示例不依赖其中的文件。
 

@@ -2,7 +2,7 @@
 
 这套说明给用户「17」使用。17 只对接总助。总助再调度客户经理、产品经理、开发者、质检员，以及按需出场的逆向工程师，把一件事从需求做到上线。
 
-17 可以从两个入口找到总助：已经接通的微信（ClawBot/iLink 桥），或 Grok Bot 主窗口。日程归档在 Notion 数据库「项目事项」，提醒写到滴答清单「17项目日程」。
+17 可以从两个入口找到总助：已经接通的微信（ClawBot/iLink 桥），或 Grok Bot 主窗口。日程目前记在 Notion「项目总台账」。「项目事项」是目标结构。提醒写到滴答清单「17项目日程」。
 
 ## 仓库是唯一源
 
@@ -22,7 +22,7 @@
 | [CHANGELOG.md](CHANGELOG.md) | 版本记录 |
 | [docs/roles.md](docs/roles.md) | 角色职责与交接 |
 | [docs/pipeline.md](docs/pipeline.md) | 需求到上线，含流程图 |
-| [docs/schedule.md](docs/schedule.md) | 项目事项字段、三视图、去重与冲突 |
+| [docs/schedule.md](docs/schedule.md) | 项目总台账、项目事项目标结构、滴答提醒 |
 | [docs/connectors.md](docs/connectors.md) | Notion、滴答、GitHub、云端开发 agent、Codex、微信桥 |
 | [docs/rules.md](docs/rules.md) | 密钥、对外发送、验收标准 |
 | [templates/requirement.md](templates/requirement.md) | 需求说明 |
@@ -39,4 +39,4 @@
 
 ## 版本
 
-当前版本 0.1.0，见 [CHANGELOG.md](CHANGELOG.md)。
+当前版本 0.1.1，见 [CHANGELOG.md](CHANGELOG.md)。
